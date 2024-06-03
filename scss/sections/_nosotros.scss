@@ -1,0 +1,30 @@
+.nosotros{
+    color: $color4;
+    font-family: $font1;
+    text-align: center;
+    font-size: 70px;
+    font-style: oblique;
+}
+
+.qs{
+    @extend .nosotros
+}
+
+.deporte{
+    display: flex;
+    justify-content: space-around;
+    .deportivo{
+        color: $color1;
+        font-size: 20px;
+        width: 500px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: $color3;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+.mapa{
+    margin-bottom: 100px;
+}

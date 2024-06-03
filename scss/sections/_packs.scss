@@ -1,0 +1,276 @@
+.packs {
+    font-family: "Bebas Neue";
+    font-weight: 400px;
+    font-size: 70px;
+    text-align: center;
+    color: #C9ADA7;
+
+}
+
+.subtitulo-packs {
+    font-family: $font3;
+    color: #9a8c98b1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.packs-titulo {
+    font-family: "Bebas Neue";
+    text-align: center;
+    color: black;
+}
+
+.pack-contenido {
+    font-family: "Noto Sans JP";
+    margin-top: 20px;
+    color: black;
+}
+
+ol, ul{
+    padding: 0;
+    color: black;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". Venta-1 ."
+        "Venta-2 Venta-1 Venta-3"
+        "Venta-2 . Venta-3";
+    justify-items: center;
+    margin-top: 40px;
+}
+
+.Venta-1 {
+    grid-area: Venta-1;
+    border: #453e44 solid 5px;
+    width: 300px;
+    height: 300px;
+    background-color: #363852;
+    height: 550px;
+    box-shadow: 40px 50px 20px #1C1C31;
+}
+
+.Venta-2 {
+    grid-area: Venta-2;
+    border: #453e44 solid 5px;
+    width: 300px;
+    height: 300px;
+    background-color: #363852;
+    height: 550px;
+    margin-bottom: 50px;
+    box-shadow: 40px 50px 20px #1C1C31;
+}
+
+.Venta-3 {
+    grid-area: Venta-3;
+    border: #453e44 solid 5px;
+    width: 300px;
+    height: 300px;
+    background-color: #363852;
+    height: 550px;
+    margin-bottom: 50px;
+    box-shadow: 40px 50px 20px #1C1C31;
+}
+
+.check {
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0px 0px;
+    padding-left: 10px;
+    grid-template-areas:
+        "Foto Texto"
+        ". .";
+}
+
+.div-boton{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.boton-packs{
+    background-color: #262643;
+    border-radius: 100px 100px;
+    padding: 5px 100px 5px 100px;
+    text-transform: uppercase;
+    transition: 0.6s all ease;
+}
+
+.boton-packs:hover{
+    background-color: white;
+}
+
+.Texto {
+    grid-area: Texto;
+    margin-bottom: 10px;
+}
+
+.Foto {
+    grid-area: Foto;
+    opacity: 0.5;
+}
+
+.navbar {
+    display: none;
+}
+
+.collapse {
+    display: none;
+}
+
+@media (max-width: 1027px) {
+    header {
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .texto-logo {
+        color: #979a8c;
+        font-family: Bebas Neue;
+        font-size: 40px;
+    }
+
+    .imagen-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .logo-strong {
+        width: 100px;
+    }
+
+    .marca {
+        width: 200px;
+    }
+
+    .inicio {
+        padding: 0;
+        margin: 0;
+    }
+
+    .parrafo-inicio {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .bg-dark {
+        background-color: #4A4E69 !important;
+    }
+
+    .collapse {
+        background-color: #4A4E69;
+    }
+
+    .collapse ul {
+        list-style-type: none;
+    }
+
+    .collapse li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: black;
+    }
+
+    .collapsing {
+        background-color: #4A4E69;
+    }
+
+    .collapsing ul {
+        list-style-type: none;
+    }
+
+    .collapsing li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar-toggler {
+        margin-top: 22px;
+    }
+
+    /* Ordenamiento Paquetes de compra*/
+    .packs-titulo {
+        font-family: "Bebas Neue";
+        text-align: center;
+    }
+
+    .pack-contenido {
+        font-family: "Noto Sans JP";
+        margin-top: 20px;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". Venta-1 ."
+            "Venta-2 Venta-1 Venta-3"
+            "Venta-2 . Venta-3";
+        justify-items: center;
+        margin-top: 40px;
+    }
+
+    .Venta-1 {
+        grid-area: Venta-1;
+        border: #453e44 solid 5px;
+        width: 250px;
+        height: 590px;
+        background-color: #363852;
+        box-shadow: 40px 50px 20px #1C1C31;
+    }
+
+    .Venta-2 {
+        grid-area: Venta-2;
+        border: #453e44 solid 5px;
+        width: 250px;
+        height: 590px;
+        margin-bottom: 50px;
+        box-shadow: none;
+    }
+
+    .Venta-3 {
+        grid-area: Venta-3;
+        border: #453e44 solid 5px;
+        width: 250px;
+        height: 590px;
+        background-color: #363852;
+        margin-bottom: 50px;
+        box-shadow: none
+    }
+
+    .check {
+        display: grid;
+        grid-template-columns: 0.2fr 1.8fr;
+        grid-template-rows: repeat(1, 1fr);
+        gap: 0px 0px;
+        grid-template-areas:
+            "Foto Texto"
+            ". .";
+    }
+
+    .Texto {
+        grid-area: Texto;
+        margin-bottom: 10px;
+    }
+}

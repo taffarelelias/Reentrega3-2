@@ -1,0 +1,383 @@
+.inicio{
+    background-image: url(../../resources/imagen-de-inicio.jpg);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.texto-inicio{
+    color: #979a8c;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $font1;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.texto-logo{
+    color: #979a8c;
+    font-family: $font1;
+    font-size: 40px;
+}
+
+.parrafo-inicio {
+    color: #3d5caba3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $font3;
+    font-size: 15px;
+    text-shadow: 0 0 10px black;
+}
+
+body {
+    background-color: $colorbody;
+}
+
+header {
+    background-image: linear-gradient(to top, rgba(8, 6, 7, 0.8), $colorheader 60%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+/* Menú de Navegación */
+nav {
+    list-style: none;
+    li{
+        display: inline-block;
+        padding: 0 20px;
+        a{
+            color: $colorlinks;
+            text-decoration: none;
+            font-family: $font1;
+        }
+    }
+}
+
+.nav{
+    flex-wrap: unset;
+}
+
+.nav li:hover{
+    background-color: #2D3141;
+    border-radius: 5px;
+}
+
+/* Imagenes */
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.imagen-logo{
+    width: 120px;
+    height: 120px;
+}
+
+/* Imagenes */
+
+/* Seccion 2 */
+.seccion2{
+    display: flex;
+    justify-content: center;
+    background-color: $color3;
+    height: 550px;
+    margin-top: 5px;
+}
+
+.mensaje-1{
+    font-family: $font1;
+    font-size: 20px;
+    font-style: oblique;
+    width: 600px;
+    padding: 45px;
+    margin-top: 90px;
+    h2{
+        font-family: $font3;
+    }
+}
+
+.mensaje-2{
+    font-family: $font1;
+    font-size: 20px;
+    font-style: italic;
+    width: 600px;
+    padding: 45px;
+    margin-top: 90px;
+}
+.boton-mensajes{
+    background-color: #1C1C31;
+    border-radius: 100px 100px;
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    transition: 0.6s all ease;
+}
+
+.boton-mensajes:hover{
+    background-color: white;
+}
+
+/* Seccion 2 fin*/
+
+.row{
+    --bs-gutter-x: 0rem;
+    justify-content: center;
+}
+
+.navbar{
+    display: none;
+}
+
+@media (max-width: 880px) {
+    /* Ordenamiento Paquetes de compra */
+    .packs-titulo{
+        color: black;
+    }
+    .pack-contenido{
+        color: black;
+    }
+    .Venta-1 {
+        grid-area: Venta-1;
+        border: #453e44 solid 5px;
+        width: 230px;
+        height: 660px;
+        background-color: #363852;
+        box-shadow: 40px 50px 20px #1C1C31;
+    }
+
+    .Venta-2 {
+        grid-area: Venta-2;
+        border: #453e44 solid 5px;
+        width: 220px;
+        height: 660px;
+        margin-bottom: 50px;
+        box-shadow: none;
+    }
+
+    .Venta-3 {
+        grid-area: Venta-3;
+        border: #453e44 solid 5px;
+        width: 220px;
+        height: 660px;
+        background-color: #363852;
+        margin-bottom: 50px;
+        box-shadow: none
+    }
+
+    .check {
+        gap: 0px 0px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav ul li {
+        display: flex;
+    }
+
+    .navbar {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .bg-dark {
+        background-color: #4a4e6900 !important;
+    }
+
+    .collapse {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        font-family: $font1;
+        text-decoration: none;
+        color: $colorlinks;
+    }
+
+    .collapse li a {
+        color: $colorlinks;
+        font-family: $font1;
+        font-size: small;
+        padding: 10px;
+    }
+    
+    .collapsing {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        font-family: $font1;
+        font-size: small;
+        padding-top: 15px;
+    }
+
+    .collapsing li a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo-strong{
+        width: 100px;
+    }
+
+    .marca{
+        width: 200px;
+    }
+
+    .inicio{
+        padding: 0;
+        margin: 0;
+    }
+
+    .parrafo-inicio{
+        margin: 0;
+        padding: 0;
+    }
+
+    .packs-titulo {
+        font-family: "Bebas Neue";
+        text-align: center;
+        color: black;
+    }
+
+    .pack-contenido {
+        font-family: "Noto Sans JP";
+        margin-top: 20px;
+        color: black;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 0px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Venta-1"
+            "Venta-1"
+            "Venta-2"
+            "Venta-2"
+            "Venta-3"
+            "Venta-3";
+    }
+
+    .Venta-1 {
+        grid-area: Venta-1;
+        width: 300px;
+        height: 550px;
+    }
+
+    .Venta-2 {
+        grid-area: Venta-2;
+        width: 300px;
+        height: 550px;
+    }
+
+    .Venta-3 {
+        grid-area: Venta-3;
+        width: 300px;
+        height: 550px;
+    }
+}
+
+@media (max-width: 600px) {
+    .seccion2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: $color3;
+    height: 550px;
+    margin-top: 5px;
+}
+    .mensaje-1{
+        font-family: $font1;
+        font-size: 20px;
+        font-style: oblique;
+        width: 350px;
+        margin: 0;
+        padding: 0;
+        h2{
+            font-family: $font3;
+            font-size: 20px;
+        }
+    }
+    .mensaje-2{
+        font-family: $font1;
+        font-size: 20px;
+        font-style: italic;
+        width: 350px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .imagen-logo{
+        width: 70px;
+        height: 70px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .imagen-logo{
+        width: 50px;
+        height: 50px;
+        padding-bottom: 10px;
+    }
+
+    .texto-logo{
+        font-size: 30px;
+    }
+
+    .mensaje-1{
+        font-size: 15px;
+        width: 250px;
+        h2{
+            font-size: 20px;
+        }
+    }
+    .mensaje-2{
+        font-size: 15px;
+        width: 250px;
+    }
+
+    .packs {
+        font-family: "Bebas Neue";
+        font-weight: 400px;
+        font-size: 50px;
+        text-align: center;
+        color: #C9ADA7;
+    }
+
+    .main-index{
+        h1{
+            font-size: 40px;
+        }
+    }
+
+    .formulario{
+        p{
+            font-size: 10px;
+        }
+    }
+}

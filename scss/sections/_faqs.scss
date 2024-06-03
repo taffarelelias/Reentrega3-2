@@ -1,0 +1,45 @@
+.faqs{
+    color: $color4;
+    font-family: $font1;
+    text-align: center;
+    font-size: 70px;
+    font-style: oblique;
+}
+
+.paquetes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.preg{
+    color: rgba(154, 140, 152, 0.6941176471);;
+    font-size: 20px;
+    text-align: center;
+}
+
+.respuesta{
+    color: $color2;
+    background-color: rgba(245, 245, 220, 0.523);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.contenido-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    font-family: $font1;
+    color: rgb(255, 0, 0);
+}
+
+.contenido-2{
+    @extend .contenido-1;
+}
+
+.contenido-3{
+    @extend .contenido-1;
+}
+
